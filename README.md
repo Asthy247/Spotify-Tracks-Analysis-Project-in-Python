@@ -12,7 +12,6 @@ The primary goal is to gain insights into song characteristics, identify pattern
 
 **Is there a relationship between popularity and other song characteristics (e.g., duration, acousticness)?**
 
-**How has the average duration of songs changed over time?**
 
 # Data Acquisition:
 
@@ -41,7 +40,7 @@ Song duration is converted from milliseconds to seconds for better interpretatio
 
 # Data Visualization
 
-# Histograms are used to display the distribution of song duration.
+# Histogram for the Distribution of Song Duration.
 
 ![image](https://github.com/user-attachments/assets/fef9265d-4105-4d30-9013-6f736bd4dbd6)
 
@@ -57,8 +56,7 @@ songs on the platform have a duration of approximately 3-4 minutes.
  
 **Mode:** The mode of the distribution is around 200 seconds, confirming the most frequent duration.
 
-# Heatmaps are created to visualize correlations between numerical features.
-
+# Heatmap for Numerical Features.
 
 ![image](https://github.com/user-attachments/assets/564697f7-86e5-43ae-8e6a-9b441e173052)
 
@@ -85,7 +83,7 @@ songs on the platform have a duration of approximately 3-4 minutes.
 o	Many features have weak or no correlation with each other, suggesting that they might capture different aspects of music.
 
 
-# Scatter Plot for Loudness vs. Energy Scatter Plot
+# Scatter Plot for Loudness vs. Energy
 
 ![image](https://github.com/user-attachments/assets/c04f9e2a-98cc-4f23-ac85-40ca0251c4b6)
 
@@ -102,6 +100,27 @@ o	Many features have weak or no correlation with each other, suggesting that the
 **•	Audio Feature Relationships**:The positive correlation indicates that energetic songs are often also louder. 
 
 This relationship can be exploited in music recommendation systems or audio analysis tasks.
+
+# Regression Plot for Popularity vs. Acousticness
+
+![image](https://github.com/user-attachments/assets/56f273db-948c-4d41-9a27-89cf25e3ae4b)
+
+
+**Key Observations:**
+
+**Negative Correlation:** The scatter plot clearly shows a negative correlation between popularity and acousticness. As acousticness increases, popularity tends to decrease.
+
+**Cluster Formation:** The data points are clustered around certain regions of the plot, indicating that certain combinations of popularity and acousticness are more common than others.
+
+**Outliers:** There are some outliers, particularly in the high popularity and low acousticness region, which might represent popular non-acoustic tracks.
+
+**Implications:**
+
+**•	Music Preferences:** The negative correlation suggests that listeners tend to prefer less acoustic tracks. More energetic and upbeat songs, which are often less acoustic, tend to be more popular.
+
+**•	Music Production:** Understanding this relationship can help music producers and artists make informed decisions about the production of their music.
+
+**•	Music Recommendation Systems:** This insight can be used to improve music recommendation systems by considering the acousticness of songs when suggesting tracks to users.
 
 # Answers to Research Questions
 
@@ -123,9 +142,6 @@ A weak positive correlation might exist between popularity and duration, suggest
 
 A negative correlation is observed between popularity and acousticness, implying listeners tend to prefer less acoustic (more energetic) tracks.
 
-**Duration Over Time:**
-
-Time series analysis of average song duration can reveal trends in song length across different release years.
 
 # Recommendations
 
